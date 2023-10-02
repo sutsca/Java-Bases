@@ -1,4 +1,5 @@
 import java.util.Scanner;
+  import java.util.Locale;
   
   public class _diferenca {
     public static void main(String[] args) {
@@ -7,6 +8,7 @@ import java.util.Scanner;
         Scanner sc = new Scanner(System.in);
 
         int a,b,c,d,diferença;
+        Locale.setDefault(Locale.US);
 
         a = sc.nextInt();
         b = sc.nextInt();
