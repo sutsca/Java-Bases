@@ -17,7 +17,6 @@ import java.util.Scanner;
     raio = Math.pow(x, 2);
     area = (3.14159 * raio);
 
-   //System.out.println("gmnkoegnier " + area);
     System.out.printf("Area = %.4f%n", area);
 
     
