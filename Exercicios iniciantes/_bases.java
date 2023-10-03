@@ -56,9 +56,9 @@ import java.util.Scanner;
        //formulas
        areaT = (A * C) / 2;
        areaC = pi * (Math.pow(C,2));
-       areaTrap = (A * B) * Math.pow(C,2);
-       areaQ = B * 4;
-       areaR = A * C;
+       areaTrap = ((A + B) * C) / 2;
+       areaQ = Math.pow(B,2);
+       areaR = A * B;
 
        System.out.printf("Triangulo: %.3f %n Circulo: %.3f %n Trapézio: %.3f %n Quadrado: %.3f %n Retangulo: %.3f %n", areaT, areaC, areaTrap, areaQ, areaR);
 
