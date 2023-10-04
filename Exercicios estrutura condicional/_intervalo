@@ -1,6 +1,6 @@
 import java.util.Scanner;
   
-  public class _parImpar {
+  public class _intervalo {
     public static void main(String[] args) {
 
         /* 
