@@ -11,39 +11,37 @@ import java.util.Scanner;
         Scanner sc = new Scanner(System.in);
 
         int inic;
-        int finall;
-        int soma;
+        int fim;
+        int duracao;
 
         
 
         System.out.print("Digite a hora que o jogo iniciou: ");
         inic = sc.nextInt();
         System.out.print("Digite a hora que o jogo acabou: ");
-        finall= sc.nextInt();
+        fim= sc.nextInt();
 
 
-        soma = (inic + finall);
+        duracao = (inic + fim);
 
+        /*
+        Neste código, calculamos a diferença entre as horas iniciais e finais e consideramos a situação em que o 
+        jogo pode começar em um dia e terminar no próximo. Em seguida, verificamos se a duração está dentro do 
+        intervalo de 1 a 24 horas antes de exibir a mensagem. 
+        */
 
-        if (soma <= 24 ){
+       if (inic < fim) {
+            duracao = fim - inic;
+        } else {
+            duracao = 24 - inic + fim;
+        }
 
-            System.out.printf("O jogo durou %f hora(s)", soma);
-           } else if(soma >= 1 ){
+        if (duracao >= 1 && duracao <= 24) {
+            System.out.printf("O jogo durou %d hora(s)", duracao);
+        } else {
+            System.out.println("Horas de jogo inválidas");
+        }
 
-                System.out.printf("O jogo durou %f hora(s)", soma);
-
-               } else if (soma == 0) {
-                
-                System.out.printf("O jogo durou 24 horas");
-               } else {
-                System.out.printf("O jogo menos que uma hora");
-               }
-
-                 sc.close();
-
-
-
-        } 
+        sc.close();
     }
-
-        
+}
