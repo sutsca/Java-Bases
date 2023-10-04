@@ -32,13 +32,14 @@ import java.util.Scanner;
         B = sc.nextInt();
 
 
+        //em qualquer ordem que vc coloque os numeros solicitados, o programa sempre fará a divisao do maior pelo menor.
+        // e vai checar se o resto é 0. Se for 0 é multiplo.
+
         if (A % B  == 0 || B % A == 0){
 
             System.out.println("São múltiplos ");
         } else {
-
             System.out.println("Não são múltiplos");
-
         }
 
         sc.close();
