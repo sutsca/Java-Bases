@@ -30,10 +30,10 @@ import java.util.Scanner;
                         System.out.println("intervalo (75 , 100)");
                         } else {
                             System.out.println("Fora de intervalo");
+             
                         }
 
+           sc.close();
 
-        }
-
-        sc.close();
-    }
+    }      
+}
